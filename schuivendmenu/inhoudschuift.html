@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <title>inhoud schuift</title>
+    <meta name="author" content="Jasper Bak">
+    <meta name="viewport" content="content=device-width, initial-scale=1">
+    <link rel="stylesheet" href="inhoudschuift.css">
+    <style>
+    #toggleMenu:checked ~ main {
+      margin-left: 10em;
+    }
+
+    #toggleLabel::before {
+      content: "\2630";
+      cursor: pointer;
+    }
+
+    #toggleMenu:checked ~ main #toggleLabel::before {
+      content: "\2716";
+    }
+
+    nav {
+      position: fixed;
+      }
+
+    main {
+      position: absolute;
+      margin-left: 0;
+      transition: margin-left .6s cubic-bezier(.17,.67,.83,.86);
+    }
+    </style>
+
+  </head>
+
+  <body lang="nl">
+    <input type="checkbox" id="toggleMenu">
+    <nav>
+      <h4>menu</h4>
+      <ul>
+        <li>
+          <a href="inhoudschuift.html" class="actief">Appel</a>
+        </li>
+        <li>
+          <a href="menuschuift.html">Banaan</a>
+        </li>
+        <li>
+          <a href="allesschuift.html">Sinaasappel</a>
+        <li>
+      </ul>
+    </nav>
+
+      <main>
+        <label for="toggleMenu" id="toggleLabel"></label>
+        <h1>Appel</h1>
+        <p><img src="https://www.delunchbus.nl/wp-content/uploads/2017/04/Appel-jg.png" alt="Appel">
+        </p>
+        <p>De appel is de vrucht van de plant Malus domestica. De vlezige vrucht bestaat uit drie lagen, maar soms vormen twee of drie lagen één geheel en zijn ze afzonderlijk niet meer te herkennen. Zo zijn bij de appel het exocarp en mesocarp niet meer van elkaar te onderscheiden en vormen gezamenlijk met de opgezwollen bloembodem het vruchtvlees. Het klokhuis is het endocarp met daarin de zaadjes (pitjes) en in het midden de vaatbundel naar het steeltje.
+        </p>
+        <p>De appel (Malus domestica) is er in veel smaken, van friszuur tot zoet. Hij wordt vaak rauw genuttigd, maar hij wordt ook veel toegepast in de keuken in bijvoorbeeld appeltaart of als garnering op pannenkoeken. En hij wordt vaak verwerkt tot appelsap, appelcider, appelmoes en appelstroop.
+        </p>
+        <p>De zaden van de appels bevatten naast suikers ook amygdaline, een glycoside dat cyanide bevat. Na consumptie duurt het enkele uren voordat de cyanide vrijkomt na hydrolyse. De consumptie van kleine hoeveelheden heeft geen merkbare gevolgen; grote hoeveelheden kunnen ziekte en zelfs de dood veroorzaken. Er is slechts één sterfgeval bekend als gevolg van een overconsumptie van appelpitten. Het slachtoffer kauwde ongeveer 250 gram appelpitten alvorens ze door te slikken.
+        </p>
+
+        <footer class="validatie">
+          <div id="validatie">
+            <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+              <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+              <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+          </a>
+          </div>
+        </footer>
+      </main>
+  </body>
+</html>

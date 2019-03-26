@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <title>alles schuift</title>
+    <meta name="author" content="Jasper Bak">
+    <meta name="viewport" content="content=device-width, initial-scale=1">
+    <link rel="stylesheet" href="allesschuift.css">
+    <style>
+    #toggleMenu:checked ~ nav {
+      margin-left: 0em;
+      transition: margin-left .6s cubic-bezier(.17,.67,.83,.86);
+    }
+
+    #toggleMenu:checked ~ main {
+      margin-left: 10em;
+      transition: margin-left .6s cubic-bezier(.17,.67,.83,.86);
+    }
+
+    #toggleLabel::before {
+      content: "\2630";
+      cursor: pointer;
+      margin-left: 0;
+      transition: margin-left .6s cubic-bezier(.17,.67,.83,.86);
+    }
+
+    #toggleMenu:checked ~ main #toggleLabel::before {
+      content: "\2716";
+      transition: margin-left .6s cubic-bezier(.17,.67,.83,.86);
+    }
+
+    nav {
+      position: fixed;
+      margin-left: -10em;
+      transition: margin-left .6s cubic-bezier(.17,.67,.83,.86);
+      z-index: 1;
+      }
+
+    main {
+      position: absolute;
+      margin-left: 0;
+      transition: margin-left .6s cubic-bezier(.17,.67,.83,.86);
+    }
+    </style>
+
+  </head>
+
+  <body lang="nl">
+    <input type="checkbox" id="toggleMenu">
+    <nav>
+      <h4>menu</h4>
+      <ul>
+        <li>
+          <a href="inhoudschuift.html">Appel</a>
+        </li>
+        <li>
+          <a href="menuschuift.html">Banaan</a>
+        </li>
+        <li>
+          <a href="allesschuift.html" class="actief">Sinaasappel</a>
+        <li>
+      </ul>
+    </nav>
+
+      <main>
+        <label for="toggleMenu" id="toggleLabel"></label>
+        <h1>Sinaasappel</h1>
+        <p><img src="https://res.cloudinary.com/hellofresh/image/upload/f_auto,fl_lossy,q_auto,w_640/v1/hellofresh_s3/image/5630de78f8b25e50598b4567.png" alt="Sinaasappel">
+        </p>
+        <p>De sinaasappel (ook wel appelsien genoemd) is de vrucht van de sinaasappelboom (Citrus sinensis), die tot het geslacht Citrus behoort. De soort wordt ook wel zoete sinaasappel genoemd, om hem te onderscheiden van de zure of bittere sinaasappel (Citrus aurantium). De boom werd vroeger in koudere klimaatgebieden in een overwinteringsvertrek gehouden, dat daaraan de naam oranjerie ontleent.
+        </p>
+        <p>De sinaasappel wordt in België en Nederland uit subtropische landen rond de Middellandse Zee geïmporteerd, zoals Israël, Spanje en Marokko. De vrucht verkleurt tijdens rijping van groen naar oranje. Vruchten uit tropische gebieden zoals Suriname verkleuren door het ontbreken van koude nachten slecht, daarom worden ze soms kunstmatig oranje gekleurd. De kleur van de schil heeft geen enkele invloed op de smaak. Veel perssinaasappels komen uit Brazilië.
+        </p>
+        <p>Sinaasappels worden gepeld gegeten of geperst tot sinaasappelsap. Het vruchtvlees is licht oranjegeel van kleur, met een typische frisse smaak. Er bestaan ook sinaasappels met rood vruchtvlees: de bloedsinaasappels. De vrucht is ook een grondstof voor limonade zoals ranja. De schil wordt voor marmelade gebruikt en als smaakmaker voor onder andere witbier of gekonfijt voor onder andere gebak (voor smaak en decoratie).
+        </p>
+        <p>De sinaasappel komt oorspronkelijk uit China (in de oude vorm: Sina), waar ook de naam naar verwijst. In het vroegnieuwnederlands komt "appel sina" voor, in het nieuwnederlands "appelsien".
+        </p>
+        <p>Nederlanders spreken het woord sinaasappel vaak met een andere klemtoon dan Vlamingen uit. De Algemene Nederlandse uitspraak heeft een klemtoon op 'sin' (met een relatief korte uitspraak van de aas), terwijl in de Vlaamse uitspraak de klemtoon naar 'naas' verplaatst is (met dus een langgerekte uitspraak van de aas).
+        </p>
+
+        <footer class="validatie">
+          <div id="validatie">
+            <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+              <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+              <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+          </a>
+          </div>
+        </footer>
+      </main>
+  </body>
+</html>

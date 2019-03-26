@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <title>menu schuift</title>
+    <meta name="author" content="Jasper Bak">
+    <meta name="viewport" content="content=device-width, initial-scale=1">
+    <link rel="stylesheet" href="menuschuift.css">
+    <style>
+    #toggleMenu:checked ~ nav {
+      margin-left: 0em;
+      transition: margin-left .6s cubic-bezier(.17,.67,.83,.86);
+    }
+
+    #toggleLabel::before {
+      content: "\2630";
+      cursor: pointer;
+      margin-left: 0;
+      transition: margin-left .6s cubic-bezier(.17,.67,.83,.86);
+    }
+
+    #toggleMenu:checked ~ main #toggleLabel::before {
+      content: "\2716";
+      margin-left: 9.7em;
+      transition: margin-left .6s cubic-bezier(.17,.67,.83,.86);
+    }
+
+    nav {
+      position: fixed;
+      margin-left: -10em;
+      transition: margin-left .6s cubic-bezier(.17,.67,.83,.86);
+      z-index: 1;
+      }
+
+    main {
+      position: absolute;
+      margin-left: 0;
+      transition: margin-left .6s cubic-bezier(.17,.67,.83,.86);
+    }
+    </style>
+
+  </head>
+
+  <body lang="nl">
+    <input type="checkbox" id="toggleMenu">
+    <nav>
+      <h4>menu</h4>
+      <ul>
+        <li>
+          <a href="inhoudschuift.html">appel</a>
+        </li>
+        <li>
+          <a href="menuschuift.html"  class="actief">Banaan</a>
+        </li>
+        <li>
+          <a href="allesschuift.html">Sinaasappel</a>
+        <li>
+      </ul>
+    </nav>
+
+      <main>
+        <label for="toggleMenu" id="toggleLabel"></label>
+        <h1>Banaan</h1>
+        <p><img src="https://res.cloudinary.com/hellofresh/image/upload/f_auto,fl_lossy,q_auto,w_640/v1/hellofresh_s3/ingredients/5931686cd0d6bd72673cd072-884a7ac7.png" alt="Banaan">
+        </p>
+        <p>Een banaan is een langwerpige, licht gebogen vrucht, die afkomstig is van de bananenplant. In Suriname spreekt men van bacove als het om de vrucht gaat die rechtstreeks uit de schil gegeten kan worden en van banaan als het om groene bakbananen gaat. In Indische gerechten wordt de banaan meestal pisang genoemd, het Maleise woord voor de vrucht. Ook in het Afrikaans kent men dat woord, maar dan gespeld als piesang.
+        </p>
+        <p>Een bananenplant of bananenboom is in werkelijkheid een kruid, 's werelds grootste kruid (kruidachtige). Volgens de tuinbouwkundige definitie wordt de banaan echter tot de groenten gerekend. Volgens de culinaire definitie is het echter een vrucht, omdat de banaan als nagerecht dan wel als tussendoortje wordt gegeten.
+        </p>
+        <p>Een gewone dessertbanaan heeft een dikke schil die eenvoudig van het vruchtvlees loslaat en kan daardoor met de hand gepeld worden. De vrucht is, zoals die in Europa gegeten wordt, meestal geel, in de vorm van een circa 20 cm lange en 3 cm dikke ronde staaf die een beetje gebogen is en dunner aan de uiteinden.
+        </p>
+        <p>Er zijn verschillende typen bananen: in Nederland is de meest gebruikte banaan een vrucht van het ras Giant Cavendish, met name van de kloon Valery, die vers kan worden gegeten, maar in veel tropische landen worden bananen gebruikt die eerst moeten worden gebakken en die zo in maaltijden worden verwerkt.
+        </p>
+        <p>
+        </p>Opvallende andere typen zijn de rode banaan, de appelbanaan, de bakbanaan, de babybanaan en de golden banaan. Van banaan wordt ook een groene alcoholische drank gemaakt, genaamd Pisang Ambon. Van bepaalde bananen kan ook chips worden gemaakt, de zogenaamde bananenchips.
+
+        <footer class="validatie">
+          <div id="validatie">
+            <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+              <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+              <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+          </a>
+          </div>
+        </footer>
+      </main>
+  </body>
+</html>
